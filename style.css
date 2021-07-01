@@ -1,0 +1,123 @@
+.body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #DFE6E9;
+}
+.container {
+    min-width: 1230px;
+}
+/* Header Elements Style */
+.row.main-header{
+    background-image: url(images/header-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 530px;
+}
+.bgOverly {
+    min-height: 530px;
+    background: rgba(52, 73, 94,0.7);
+    z-index: 99999;
+}
+.row.main-header .arrow {
+    margin-top: 2rem;
+}
+.row.main-header .hContentCol img {
+    width: 17%;
+}
+.hmainNm{
+    color: #f79f1f;
+}
+.main-header .bgOverly .socialIcon a {
+    padding: 0 15px;
+    font-size: 28px;
+    color: #fff;
+}
+.col.hContentCol.text-center {
+    padding-top: 4rem;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* About Section */
+.abtMainDiv h2:nth-child(1) {
+    background-color: #F79F1F;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 3rem;
+}
+.container.abtMainDiv {
+    box-shadow: 3px 3px 5px 0px #ccc;
+    background: #fff;
+    border-radius: 30px;
+    margin-top: 3rem;
+    padding: 0;
+}
+.container.abtMainDiv div{
+    padding: 10px;
+}
+.container.abtMainDiv .cvList .col i {
+    padding-right: 10px;
+    color: #f79f1f;
+}
+.cvList .col:nth-child(3) img {
+    width: 100%;
+    border-radius: 5px;
+}
+.cvList a:nth-child(1) {
+    text-decoration: none;
+    color: #17a2b8;
+    border: 2px solid #17a2b8;
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+.cvList a:nth-child(1):hover {
+    background: #17a2b8;
+    color: #fff;
+}
+div#dwnldCV {
+    margin-top: 4rem;
+}
+.tringle {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: -21px auto;
+    background:#F79F1F;
+    clear: both;
+    transform: rotate(45deg);
+}
+
